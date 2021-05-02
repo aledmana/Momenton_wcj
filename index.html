@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+</head>
+
+<body class="wcj_full_screen">
+	<div class="wcj_view wcj_layout_clean">
+		<div class="wcj_view">
+			<div class="wcj_view wcj_layout_line">
+				<div class="wcj_view wcj_toolbar">
+					<div class="wcj_view wcj_control wcj_el_label">
+						<div class="wcj_el_box">Anomyous' Dashboard</div>
+					</div>
+					<div class="wcj_view wcj_spacer">
+					</div>
+					<div class="wcj_view wcj_control wcj_el_userinfo">
+						<form class="js-form form">
+							<input type="text" placeholder="What is your name?" />
+						</form>
+						<h4 class="js-greetings greeting"></h4>
+					</div>
+					<div class="wcj_view wcj_control wcj_el_icon">
+						<div class="wcj_el_box">
+							<button type="button">⚙</button>
+						</div>
+					</div>
+				</div>
+				<div class="wcj_view wcj_abslayout content_dashboard">
+					<div class="wcj_view panel1" style="display:inline-block;">
+						<div class="panel_toolbar">Clock</div>
+						<div class="panel_content">
+							<div class="js-clock">
+								<h1>00:00</h1>
+							</div>
+						</div>
+					</div>
+					<div class="wcj_view panel2" style="display:inline-block;">
+						<div class="panel_toolbar">To Do Lists</div>
+						<div class="panel_content">
+							<form class="js-toDoForm">
+								<input type="text" placeholder="Write a to do" />
+							</form>
+							<ul class="js-toDoList">
+						</div>
+					</div>
+					<span class="js-weather weather"></span>
+				</div>
+			</div>
+		</div>
+		<div class="wcj_view navbar">
+		</div>
+	</div>
+	<script src="BoardUI/toolbar.js"></script>
+	<script src="BoardUI/contentboard.js"></script>
+	<script src="BoardUI/navbar.js"></script>
+	<script src="src/greeting.js"></script>
+	<script src="src/weather.js"></script>
+	<script src="src/clock.js"></script>
+	<script src="src/todo.js"></script>
+	<script src="src/bg.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+body {
+  font-family: sans-serif;
+}
+.wcj_view {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #475466;
+  letter-spacing: 0.2px;
+  cursor: default;
+  overflow: hidden;
+  border: 0px solid #dadee0;
+  background-color: #ffffff;
+  white-space: normal;
+}
+
+body.wcj_full_screen {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.wcj_view.wcj_control.wcj_el_label {
+  display: inline-block;
+  vertical-align: top;
+  border-width: 0px;
+  margin-top: 2px;
+  margin-left: 12px;
+  width: 400px;
+  height: 52px;
+}
+
+.wcj_toolbar .wcj_el_label .wcj_el_box {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #475466;
+  letter-spacing: 0px;
+}
+
+.wcj_abslayout.content_dashboard {
+  background-color: #ebedf0;
+}
+
+.wcj_abslayout {
+  position: relative;
+}
+
+.wcj_abslayout > .wcj_view {
+  position: absolute !important;
+}
+.wcj_view.navbar {
+  overflow: visible;
+}
+
+.navbar {
+  background-color: #202531;
+  background: linear-gradient(90deg, #2b3a59 0%, #202531 100%);
+  box-shadow: 0 1px 7px 0 rgb(0 0 0 / 12%), 0 2px 5px 0 rgb(0 0 0 / 10%);
+}
+
+.form,
+.greeting {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.weather {
+  position: absolute;
+  font-style: italic;
+  font-size: 12px;
+  top: 25px;
+  right: 25px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.content_dashboard {
+  height: 100%;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
